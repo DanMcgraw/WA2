@@ -1,0 +1,12 @@
+h1 {
+  font-size: 36px;
+  color: #333333;
+}
+
+#navbar {
+  background-color: #222222;
+  color: #888;
+  position: fixed;
+  top: 0px;
+  width: 80%;
+}
