@@ -1,6 +1,5 @@
-h1 {
-  font-size: 36px;
-  color: #333333;
+html{
+  background-color: #eee;
 }
 
 #navbar {
@@ -8,5 +7,143 @@ h1 {
   color: #888;
   position: fixed;
   top: 0px;
+  left: 0;
+  right: 0;
   width: 80%;
+  margin: auto;
+}
+
+#navbar ul li {
+  display: inline;
+  float: right;
+}
+
+#navbar ul{
+  margin: auto;
+}
+
+/* The navigation menu links */
+#navbar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15pt;
+  color: #888;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+#navbar a:hover {
+  color: #f1f1f1;
+  background-color: #444;
+  transition: 0.3s;
+}
+
+#navbar2 {
+  background-color: #f8f8f8;
+  color: #888;
+  border: 1px solid rgba(150,150,150,0.3);
+}
+
+#navbar2 ul li {
+  display: inline-block;
+text-align: center;
+}
+
+#navbar2 ul{
+  margin: auto;
+  padding: 0px 0px 0px 0px;
+}
+
+/* The navigation menu links */
+#navbar2 a {
+  padding: 10px 8px 10px 10px;
+  text-decoration: none;
+  font-size: 11pt;
+  font-weight: bold;
+  display: block;
+  color: #888;
+}
+
+/* When you mouse over the navigation links, change their color */
+#navbar2 a:hover {
+  color: #f1f1f1;
+  background-color: #444;
+  transition: 0.3s;
+}
+
+#container{
+  font-family: sans-serif;
+  display: block;
+  width: 80%;
+  margin:auto;
+  margin-top: 30pt;
+}
+
+#container h1 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  color: #333333;
+}
+
+#content {
+  color:#444;
+  margin-top: 10pt;
+  padding: 6pt;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+#content img{
+  float: left;
+  margin-top: 10pt;
+  margin-right: 20pt;
+}
+
+#content p{
+  display:block;
+}
+
+#content h2{ /*this is the price tag*/
+  display: block;
+  color: red;
+  font-size: 14pt;
+}
+
+#content #buttons{
+  border: 2px solid #ccc;
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 5pt 3pt 5pt 3pt;
+}
+
+#content #buttons a{
+   width: 200px;
+   background: #4E9CAF;
+   padding: 10px;
+   text-align: center;
+   border-radius: 5px;
+   color: white;
+   font-weight: bold;
+}
+
+#content h3{
+  margin-top: 10pt;
+  margin-bottom: 0pt;
+}
+
+#content table tr th{
+  text-align: left;
+}
+
+#similar {
+  float:left;
+  width: 100%;
+  display: block;
+}
+
+#item img{
+  margin: auto;
 }
