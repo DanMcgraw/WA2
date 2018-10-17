@@ -1,5 +1,6 @@
-html{
-  background-color: #eee;
+html {
+  background-image: url("images/stucco.png");
+  background-repeat: repeat;
 }
 
 #navbar {
@@ -18,7 +19,7 @@ html{
   float: right;
 }
 
-#navbar ul{
+#navbar ul {
   margin: auto;
 }
 
@@ -41,15 +42,15 @@ html{
 #navbar2 {
   background-color: #f8f8f8;
   color: #888;
-  border: 1px solid rgba(150,150,150,0.3);
+  border: 1px solid rgba(150, 150, 150, 0.3);
 }
 
 #navbar2 ul li {
   display: inline-block;
-text-align: center;
+  text-align: center;
 }
 
-#navbar2 ul{
+#navbar2 ul {
   margin: auto;
   padding: 0px 0px 0px 0px;
 }
@@ -71,11 +72,11 @@ text-align: center;
   transition: 0.3s;
 }
 
-#container{
+#container {
   font-family: sans-serif;
   display: block;
   width: 80%;
-  margin:auto;
+  margin: auto;
   margin-top: 30pt;
 }
 
@@ -86,30 +87,36 @@ text-align: center;
 }
 
 #content {
-  color:#444;
+  color: #444;
   margin-top: 10pt;
   padding: 6pt;
   background-color: #f8f8f8;
   overflow: hidden;
 }
 
-#content img{
+#content>b {
+  font-size: 16pt;
+  margin-bottom: 10pt;
+}
+
+#content>img {
   float: left;
   margin-top: 10pt;
   margin-right: 20pt;
 }
 
-#content p{
-  display:block;
+#content p {
+  display: block;
 }
 
-#content h2{ /*this is the price tag*/
+#content h2 {
+  /*this is the price tag*/
   display: block;
   color: red;
   font-size: 14pt;
 }
 
-#content #buttons{
+#content #buttons {
   border: 2px solid #ccc;
   overflow: hidden;
   text-align: center;
@@ -119,31 +126,81 @@ text-align: center;
   padding: 5pt 3pt 5pt 3pt;
 }
 
-#content #buttons a{
-   width: 200px;
-   background: #4E9CAF;
-   padding: 10px;
-   text-align: center;
-   border-radius: 5px;
-   color: white;
-   font-weight: bold;
+#content #buttons a {
+  width: 200px;
+  background: #4E9CAF;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
 }
 
-#content h3{
+#content h3 {
   margin-top: 10pt;
   margin-bottom: 0pt;
 }
 
-#content table tr th{
+#content table tr th {
   text-align: left;
 }
 
 #similar {
-  float:left;
+  float: left;
   width: 100%;
   display: block;
 }
 
-#item img{
+#similar #list {
+  display: flex;
+  justify-content: space-around;
+}
+
+#similar .element {
+  width: 180px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#similar .element img {
+  display: block;
+  width: 150px;
   margin: auto;
+}
+
+#similar .element a {
+  display: block;
+}
+
+fieldset {
+  border: 0;
+  border-top: 2px solid gray;
+  padding: 0;
+  font-weight: bold;
+  line-height: 25pt;
+  margin-top: 16pt;
+}
+
+fieldset input {
+  display: inline;
+}
+
+fieldset>div {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+fieldset>div>div {
+  overflow: hidden;
+  display: inline-block;
+}
+
+footer {
+  background-color: #222222;
+  color: #888;
+  width: 100%;
+  padding: 10pt;
+  text-align: center;
 }

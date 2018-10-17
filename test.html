@@ -1,0 +1,36 @@
+<html>
+   <head></head>
+   <script>
+      function codeAddress() {
+         var body = document.getElementsByTagName("body")[0];
+         var ourTable = document.createElement("table");
+         var ourTableBody = document.createElement("tbody");
+         var header = document.createElement("tr");
+         var cell = document.createElement("td");
+         cell.appendChild(document.createTextNode("number"));
+         header.appendChild(cell);
+         var cell = document.createElement("td");
+         cell.appendChild(document.createTextNode("square"));
+         header.appendChild(cell);
+         var cell = document.createElement("td");
+         cell.appendChild(document.createTextNode("cubed"));
+         header.appendChild(cell);
+         ourTableBody.appendChild(header);
+         for (var i = 0; i < 6; i++) {
+            var row = document.createElement("tr");
+            for (var j = 0; j < 3; j++) {
+               var cell = document.createElement("td");
+               var cellText = document.createTextNode(Math.pow(i, j + 1));
+               cell.appendChild(cellText);
+               row.appendChild(cell);
+            }
+            ourTableBody.appendChild(row);
+         }
+         ourTable.appendChild(ourTableBody);
+         body.appendChild(ourTable);
+         ourTable.setAttribute("border", "2");
+      }
+      window.onload = codeAddress;
+   </script>
+   <body></body>
+</html>
